@@ -10,7 +10,6 @@
 	import InfoMessage from "./components/InfoMessage.svelte";
 	import ToAddTodoDialog from "./components/ToAddTodoDialog.svelte";
 	import DeleteDialog from "./components/DeleteDialog.svelte";
-	import {get} from "svelte/store";
 	let internetConnectionLostMessage = "Ooops!.. Something went wrong. " +
 			"May be you have lost the internet connection. Try later!";
 	token.subscribe(async(tokenValue)=>{
