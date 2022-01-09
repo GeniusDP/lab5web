@@ -93,7 +93,7 @@
 			//console.log("mut = ", OperationDocsHelper.MUTATION_DeleteByQuantity(title));
 			try {
 				await http.startExecuteMyMutation(OperationDocsHelper.MUTATION_DeleteByQuantity(title));
-				todos.update(n => n.filter(item => item.title != title));
+				todos.update(n => n.filter(item => item.title !== title));
 			}catch(e){
 				modalInfoText = internetConnectionLostMessage;
 				modalInfoIsOpen = true;
