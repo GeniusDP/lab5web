@@ -11,7 +11,7 @@
 	import ToAddTodoDialog from "./components/ToAddTodoDialog.svelte";
 	import DeleteDialog from "./components/DeleteDialog.svelte";
 
-	console.log(process.env.SVELTE_APP_ENV1);
+	console.log(process.env.SVELTE_APP_ENV1 + "");
 
 	let internetConnectionLostMessage = "Ooops!.. Something went wrong. " +
 			"May be you have lost the internet connection. Try later!";
