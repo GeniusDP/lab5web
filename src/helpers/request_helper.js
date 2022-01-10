@@ -23,7 +23,7 @@ class RequestHelper {
         if (errors) {
             throw errors;
         }
-        console.log("array of todos from start = " + JSON.stringify(data));
+        //console.log("array of todos from start = " + JSON.stringify(data));
         isLoading.set(false);
         return data;
     }
@@ -37,7 +37,7 @@ class RequestHelper {
         if (errors) {
             throw errors;
         }
-        console.log(data);
+        //console.log(data);
         return data;
     }
     fetchMyQuery(operationsDoc) {

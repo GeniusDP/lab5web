@@ -17,7 +17,7 @@ async function loginWithPopup(client, options) {
         token.set(accessToken.__raw);
         isAuthenticated.set(true);
     } catch (e) {
-        console.error(e);
+        console.log(e);
     } finally {
         popupOpen.set(false);
     }

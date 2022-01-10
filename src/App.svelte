@@ -1,7 +1,7 @@
 <script>
 	import http from './helpers/request_helper';
 	import OperationDocsHelper from "./helpers/operation_docs";
-	import {todos, isAuthenticated, user, token, isLoading, addingNewTodoNow} from './store';
+	import {todos, isAuthenticated, user, token, isLoading} from './store';
 	import {onMount} from "svelte";
 	import {get} from "svelte/store";
 	import auth from "./auth_service";
@@ -10,6 +10,9 @@
 	import InfoMessage from "./components/InfoMessage.svelte";
 	import ToAddTodoDialog from "./components/ToAddTodoDialog.svelte";
 	import DeleteDialog from "./components/DeleteDialog.svelte";
+
+	console.log(process.env.SVELTE_APP_ENV1);
+
 	let internetConnectionLostMessage = "Ooops!.. Something went wrong. " +
 			"May be you have lost the internet connection. Try later!";
 	token.subscribe(async(tokenValue)=>{
